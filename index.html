@@ -1,603 +1,210 @@
-<!-- 
-    This is the entry point to my website.
- -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <!--The style of css etc.-->
-
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- 
-        Set the initial zoom level when the page is first loaded by the browser. 
-        - The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
-        - The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
-     -->
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 
-         For search engines.
-    -->
+    <meta name="description" content="Yun-Shiuan (Sean) Chuang is a Staff AI Research Scientist working on post-training, evaluation, and alignment for LLM agents.">
     <meta name="author" content="Yun-Shiuan (Sean) Chuang">
-    <meta name="keywords" content="Yun-Shiuan Chuang, Sean Chuang">
+    <meta name="theme-color" content="#0a1517">
+    <title>Yun-Shiuan (Sean) Chuang — AI Research Scientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet">
+    <link href="css/portfolio-2026.css" rel="stylesheet">
+  </head>
+  <body class="site-home">
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <title>Yun-Shiuan (Sean) Chuang</title>
-
-    <!-- Style Sheets -->
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
-        type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    <!-- Theme CSS -->
-    <link href="css/yunshiuan.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
-    <![endif]-->
-
-</head>
-
-<body id="page-top" class="index">
-    <!-- 
-        Navigation Bar 
-        - will be filled in by JS.
-    -->
-    <!-- Navigation Bar -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a class="page-scroll" href="#headerpage">Home</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#headerpublication">Publications</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#headerexperience">Experiences</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="nav-project">Projects
-                            <span class="caret"></span></a>
-                        <ul class="dropdown-menu" id="nav_experiences">
-                            <li><a class="page-scroll" href="#R_FB">Facebook Filter Bubbles (Big Data)</a>
-                            </li>
-                            <li><a class="page-scroll" href="#R_LAMBDA">Numerical Cognition and Neural
-                                    Representation
-                                    (fMRI)</a></li>
-
-                            <li><a class="page-scroll" href="#R_ADM">Personal Values & Risk-taking (fMRI)
-                                </a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#headerother" id="other_tab">Other</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#headercontact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <header class="site-header">
+      <nav class="site-nav content-width" aria-label="Primary navigation">
+        <a class="wordmark" href="#top" aria-label="Yun-Shiuan Chuang, home">
+          <span class="wordmark-mark">YSC</span>
+          <span class="wordmark-name">Yun-Shiuan Chuang</span>
+        </a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#publications">Publications</a>
+          <a href="#contact">Contact</a>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-    <!-- Header -->
-    <section id="headerpage">
-    </section>
-    <!-- Intro -->
-    <section id="intro">
-        <!--Each section contains several divs-->
-        <div class="container top-container">
-            <div class="row">
-                <!-- The left column: photo and badges -->
-                <div class="col-lg-5">
-                    <div class="text-center">
-                        <img src="img/about/me.png" class="img-responsive center-image" alt="" style="margin-top: 0px"
-                            width="250">
-                    </div>
-                    <div class="text-center">
-                        <h3>Yun-Shiuan (Sean) Chuang</h3>
-                        <p class="larger"> Master's Student in Computer Science & <br /> Ph.D. Student in Cognitive
-                            Science
-                        </p>
-                        <p class="larger">University of Wisconsin-Madison</p>
-                    </div>
-                    <!-- Badges -->
-                    <div class="badge-container text-center">
-                        <!-- LinkedIn -->
-                        <a target="_blank" rel="noopener noreferrer"
-                            href="https://www.linkedin.com/in/yunshiuanchuang/"><img src="img/about/icon_linkedin.jpg"
-                                height="40px" class="icon-badge"></a>
-                        <!-- GitHub -->
-                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/yunshiuan"><img
-                                src="img/about/icon_github.png" height="40px" class="icon-badge"></a>
-                        <!-- CV -->
-                        <a target="_blank" rel="noopener noreferrer"
-                            href="files/about/Resume_YunShiuan_DS_20201109_v4.pdf"><img
-                                src="img/about/icon_CV.png" height="40px" class="icon-badge"></a>
-                    </div>
+      </nav>
+    </header>
 
-                </div>
-                <!-- The right column: text -->
-                <div class="col-lg-7 text-center">
-                    <!--"col-md-4": To center the text-->
-                    <h1 class="section-heading text-left">About Me</h1>
-                    <!--The text of this section-->
-                    <p class="larger text-black justify">
-
-                        My research focuses on <b>using machine learning to improve human-machine
-                            interactions</b>.
-                        <br /><br />
-                        I am currently an
-                        <b>M.S.
-                            Computer Science</b> and
-                        <b>Ph.D.
-                            Cognitive Science</b> student at University of Wisconsin - Madison.
-                        Before that, I was a
-                        full-time research
-                        associate at <i><a target="_blank" rel="noopener noreferrer"
-                                href="http://ai.robo.ntu.edu.tw/en/about.php" class="text-black">Center for
-                                Artificial
-                                Intelligence and Advanced Robotics</a></i>
-                        conducting
-                        research
-                        on social cognition module for assistive robots.
-                        <br /><br />
-                        My expertise includes data science, AI, ML, conducting research on human-machine interaction.
-                        <br /><br />
-                        I am looking for 2021 summer internship as <b>a data scientist, a machine learning engineer, an
-                            applied scientist, or a software engineer!</b>
-                        <br /><br /></p>
-                </div>
-            </div>
-
-            <div class="row text-center">
-                <!-- Education -->
-                <div class="col-md-12 text-left text-black large">
-                    <h3 class="section-heading text-left line"> Education </h3>
-                    <!-- UW-Madison PhD -->
-                    <div class="card">
-                        <h4>University of Wisconsin - Madison</h4>
-                        <p> <span class="large">M.S. in Computer Science & Ph.D. in Cognition and Cognitive
-                                Neuroscience</span> <span><i>(09/2019-present)</i></span></p>
-                        <ul style="list-style-type: square">
-                            <li>GPA : 4.00/4.00</li>
-                            <li>Selected Courses: Artificial Intelligence, Machine Learning, Deep Learning, Data
-                                Structures
-                                and Algorithms, Computational Cognitive Sciences</li>
-                        </ul>
-                    </div>
-                    </br>
-                    <!--UW-Madison Visiting-->
-                    <div class="card">
-                        <h4>University of Wisconsin - Madison</h4>
-                        <p> <span class="large">Visiting Student Researcher</span> <span><i>(09/2017-06/2018)</i></span>
-                        </p>
-                        <ul style="list-style-type: square" class="text-left">
-                            <li>GPA: 4.00/4.00</li>
-                            <li>Fully-funded by Study Abroad Scholarship for Future Scholars (Ministry of Education,
-                                Taiwan)
-                            </li>
-                        </ul>
-                    </div>
-                    </br>
-                    <!--NTU-->
-                    <div class="card">
-                        <h4>National Taiwan University </h4>
-                        <p> <span class="large">Bachelor of Science in Psychology</span>
-                            <span><i>(09/2013-06/2018)</i></span></p>
-                        <ul style="list-style-type: square" class="text-left">
-                            <li>GPA : 4.20/4.30 (Rank: 2 / 62)</li>
-                            <li>Dean's Award of College of Science; Presidential Awards (7 out of 8 semesters)</li>
-                            <li>Selected Courses: Data Science, Statistical Analysis, Psychology Experiment Design,
-                                Multivariate Analysis</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- SKILLS -->
-                <div class="col-md-12 text-left text-black large">
-                    <h3 class="section-heading line text-left"> Skills</h3>
-                    <!-- Programming languages -->
-                    <div class="text-black large card">
-                        <h4>Programming Languages</h4>
-                        <ul style="list-style-type: square">
-                            <li><b>Machine Learning</b>: TensorFlow, Scikit-learn</li>
-                            <li><b>Languages</b>: Python, R, MATLAB, SQL,
-                                Java, Shell, Git, JavaScript, HTML, CSS,
-                                LaTeX</li>
-                        </ul>
-                    </div>
-                    </br>
-                    <!-- Package development -->
-                    <div class="text-black large card">
-                        <h4>Package Development</h4>
-                        <ul style="list-style-type: square">
-                            <li>Author of the R package: <a target="_blank" rel="noopener noreferrer"
-                                    href="https://github.com/yunshiuan/label4MRI"><u>label4MRI</u></a>
-                                - a toolbox for labeling brain image (27 stars and 13 forks on GitHub)</li>
-                            <li>Contributor of the MATLAB toolbox: <a target="_blank" rel="noopener noreferrer"
-                                    href="https://github.com/yunshiuan/rsatoolbox"><u>rsatoolbox</u></a></li>
-                        </ul>
-                    </div>
-                    </br>
-                    <!-- Statistical Models -->
-                    <div class="text-black large card">
-                        <h4>Advanced Statistics</h4>
-                        <ul style="list-style-type: square">
-                            <li>Generalized Linear Mixed Model (GLMM), Markov chain Monte Carlo (MCMC) Sampling,
-                                Bayesian Statistics, Bootstrapping & Permutation Testing, Time-Series Analysis,
-                                Multivariate Analysis</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
+    <main id="main-content">
+      <section class="hero content-width" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> AI research · LLM agents · human–AI interaction</p>
+          <h1 id="hero-title">Building LLM agents that reason, use tools, and work with people.</h1>
+          <p class="hero-intro">I’m Yun-Shiuan (Sean) Chuang, a Staff AI Research Scientist at PayPal. My work spans post-training, evaluation, and alignment for reliable, interactive AI systems.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#publications">Explore selected work <span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="https://www.linkedin.com/in/yunshiuanchuang/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-    </section>
-
-    <!--  Section for publication Header: transparent img in the background-->
-    <section id="headerpublication">
-        <div class="container">
-            <div class="col-lg-12 text-center">
-                <h1 class="section-heading">Research Publications</h1>
-            </div>
+        <div class="hero-portrait-wrap">
+          <div class="portrait-orbit orbit-one" aria-hidden="true"></div>
+          <div class="portrait-orbit orbit-two" aria-hidden="true"></div>
+          <div class="portrait-frame">
+            <img src="img/about/me.png" alt="Yun-Shiuan (Sean) Chuang">
+          </div>
+          <div class="portrait-note">
+            <span class="note-dot" aria-hidden="true"></span>
+            <span>Staff AI Research Scientist<br>PayPal AI Research</span>
+          </div>
         </div>
-    </section>
-    <section id="publication">
-        <div class="container">
-            <!-- Machine-Learning Related Publication -->
-            <div class="row">
-                <!-- Specify the feature of lower row-->
-                <div class="col-lg-12 justify">
-                    <h3 class="section-heading line">Machine-Learning Related Publication</h3>
-                    <p class="line" id="QL">
-                        1. <b>Chuang, Y.S.</b>, Zhou, X., Ma, M., Ho, M. Austerweil, J., Zhu, X. (under review) Using
-                        Machine Teaching to Investigate Human Assumptions when Teaching Reinforcement Learners
-                    </p>
-                    <p class="line" id="DCNN">
-                        2. <b>Chuang, Y.S.</b>, Hubbard, E., Austerweil, J. (2020) The “Fraction Sense” Emerges from a
-                        Deep Convolutional Neural Network. Proceedings of the 42nd Annual Meeting of the Cognitive
-                        Science Society [<a target="_blank" rel="noopener noreferrer"
-                            href="/publications/thefraction_0623.pdf">pdf</a>]
-                    </p>
-                    <p class="line" id="ROMAN">
-                        3. <b>Chuang, Y.S.</b>, Hung, Gamborino E., Goh, O.S., Huang, T.R., Chang, Y.L., Yeh, S.L.,
-                        Fu,L.C. (2020) Using Machine Theory of Mind to Learn Agent Social Network Structures from
-                        Observed Interactive Behaviors with Targets. <b>IEEE</b>, Robot and Human Interactive
-                        Communication [<a target="_blank" rel="noopener noreferrer"
-                            href="/publications/ROMAN20_PreferenceLearning_20200727_YunShiuan_v0.pdf">pdf</a>]
-                    </p>
-                </div>
-            </div>
-            <!-- Neuroscience-Related Publication -->
-            <div class="row">
-                <!-- Specify the feature of the upper row-->
-                <div class="col-lg-12 justify">
-                    <h3 class="section-heading line">Cognitive Neuroscience-Related Publication</h3>
-                    <!--Publications: Journal Articles  -->
-                    <p class="line"> 1. <b>Chuang, Y.S.</b>, Austerweil, J., Hubbard, E. (2020).
-                        Fraction neural representation in the human parietal cortex: mixed format and magnitude
-                        dependent representations. Manuscript in preparation. </p>
+      </section>
 
-                    <p class="line"> 2. <b>Chuang, Y.S.</b>, Su, Y.S., & Goh, O.S. (under
-                        review).
-                        Neural responses reveal associations between personal values and value-based decisions. </p>
-                    <!--Publications: Conference Presentation -->
-                    <p class="line">3. Binzak, J.V., Park, Y., Toomarian, E.Y., Kalra, P.,
-                        <b>Chuang, Y.S.</b>, Percival G.M., P.G., & Hubbard, E.M. (2018) Are Fractions Percepts?
-                        Neurocognitive Relationships between Nonsymbolic and Symbolic Ratio Processing in Children and
-                        Adults. Presented at Cognitive Neuroscience Society Annual Meeting, Boston, USA [<a
-                            target="_blank" rel="noopener noreferrer"
-                            href="https://www.researchgate.net/publication/326913598_Are_Fractions_Percepts_Neurocognitive_Relationships_between_Nonsymbolic_and_Symbolic_Ratio_Processing_in_Children_and_Adults">Poster</a>]
-                    </p>
-
-                    <p class="line">4. <b>Chuang, Y.S.</b>, Su, Y.S., & Goh, O.S. (2017). Personal
-                        core values modulate risky choice evaluation and subsequent risk taking behavior: an fMRI study.
-                        Presented at the Society for Neuroscience Annual Meeting, Washington, DC, USA [<a
-                            target="_blank" rel="noopener noreferrer"
-                            href="https://www.researchgate.net/publication/320068583_Personal_core_values_modulate_risky_choice_evaluation_and_subsequent_risk_taking_behavior_an_fMRI_study">Poster</a>]
-                        [<a target="_blank" rel="noopener noreferrer"
-                            href="http://www.abstractsonline.com/pp8/#!/4376/presentation/18081">Abstract</a>]</p>
-
-                    <p class="line">5. <b>Chuang, Y.S.</b> & Goh, O.S. (2017). Personal values
-                        modulate risk-taking behaviors: Hedonism as an Accelerator and Security as a Break. Presented at
-                        Joint Conference of National Taiwan University, Peking University, and Chinese University of
-                        Hong Kong Psychology Departments, Beijing, China [<a target="_blank" rel="noopener noreferrer"
-                            href="https://www.researchgate.net/publication/320068579_Personal_Values_Modulate_Risk-Taking_Behaviors_Hedonism_as_an_Accelerator_and_Security_as_a_Brake">Poster</a>]
-                        <i>Received the Excellent Poster Award</i></p>
-                </div>
-            </div>
-    </section>
-
-    <section id="headerexperience">
-        <div class="container">
-            <div class="col-lg-12 text-center">
-                <h1 class="section-heading">Professional Experiences</h1>
-            </div>
+      <section class="signal-band" aria-label="Research highlights">
+        <div class="content-width signal-grid">
+          <div><span class="signal-label">Current focus</span><strong>Post-training &amp; evaluation<br>for LLM agents</strong></div>
+          <div><span class="signal-label">Research venues</span><strong>ICLR · ACL · EMNLP<br>NAACL · CogSci</strong></div>
+          <div><span class="signal-label">Background</span><strong>Ph.D. Cognitive Science<br>M.S. Computer Science</strong></div>
         </div>
-    </section>
-    <section id="experience">
-        <div class="container">
-            <div class="row">
-                <!--Research Experience -->
-                <div class="col-lg-12 text-center">
-                    <div class="large text-left">
-                        <!-- UW-Madison PhD-->
-                        <div class="card">
-                            <h3 class="line"> Graduate Researcher</h3>
-                            <h4>Computational Cognitive Science Lab, UW-Madison</h4>
-                            <h5>09/2019-present</h5>
-                            <ul class="justify">
-                                <li> Applied <b>deep reinforcement learning (DRL)</b> to reverse-engineer human
-                                    assumptions
-                                    when teaching reinforcement
-                                    learners (<b>Python</b>) and found that human is most capable of teaching Q learner
-                                    with
-                                    small discount factor</li>
-                                <li>Built the online teaching game as a full-stack web developer (<b>HTML, CSS,
-                                        JavaScript,
-                                        SQL</b>) for the RL project
-                                    and collected 1030 players’ data on MTurk</li>
-                                <li>Discovered that “number sense” emerged from a <b>deep convolutional neural
-                                        network
-                                        (VGG16</b>) trained for classifying
-                                    natural images (<b>Python, TensorFlow, MATLAB, R</b>) <a href="#DCNN" type="button"
-                                        class="btn btn-xl btn-small in-page-scroll">See
-                                        Publication</a></li>
-                            </ul>
-                        </div>
-                        </br>
-                        <!-- AI Center -->
-                        <div class="card">
-                            <h3 class="line"> Research Associate</h3>
-                            <h4>Center for Artificial Intelligence and Advanced Robotics, NTU</h4>
-                            <h5>12/2018-08/2019</h5>
-                            <ul class="justify">
-                                <li> Developed a robotic social cognition module by training a <b> deep neural network
-                                        (resnet & LSTM)</b> that infers
-                                    people’s social preferences with 80+% accuracy (<b>Python, TensorFlow, R</b>)<a
-                                        href="#ROMAN" type="button" class="btn btn-xl btn-small in-page-scroll">See
-                                        Publication</a></li>
-                                <li>Designed the online social interaction game for the robotic study as a full-stack
-                                    web developer (<b>JavaScript, SQL</b>)</li>
-                            </ul>
-                        </div>
-                        </br>
-                        <!-- Visiting RA -->
-                        <div class="card">
-                            <h3 class="line">Visiting Researcher</h3>
-                            <h4>Waisman Center, UW-Madison</h4>
-                            <h5>08/2017-06/2018</h5>
-                            <ul class="justify">
-                                <li>Applied <b>Multi-Voxel Pattern
-                                        Analysis - Representational Similarity Analysis (MVPA-RSA)</b> to decode the
-                                    neural
-                                    representation of fraction number with human fMRI data
-                                    <a href="#R_LAMBDA" type="button" class="btn btn-xl btn-small in-page-scroll">See
-                                        Details</a>
-                                </li>
+      </section>
 
-                                <li>Automated the end-to-end human fMRI data (time-series 3D brain images) processing
-                                    and
-                                    analysis pipeline for
-                                    250+ scans, which slashed 200+ hours of manual work of the lab (<b>Shell,
-                                        MATLAB</b>)
-                                </li>
-                            </ul>
-                        </div>
-                        </br>
-                        <!--  RA at BML -->
-                        <div class="card">
-                            <h3 class="line">Research Assistant</h3>
-                            <h4>Brain and Mind Lab, NTU</h4>
-                            <h5>10/ 2014-08/ 2017</h5>
-                            <ul class="justify">
-                                <li>Evaluated the role of personal values in risk-taking behaviors with both behavioral
-                                    and time-series fMRI data using <b>GLM, functional connectivity, and graph theory
-                                        measures</b> </li>
-
-                                <li>Discovered that hedonism serves as an accelerator and security as a brake in
-                                    risk-taking
-                                    and identified the neural correlates
-                                    <a href="#R_ADM" type="button" class="btn btn-xl btn-small in-page-scroll">See
-                                        Details</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    </br> </br>
-                    <h3 class="section-heading text-left">Data Science Project Leadership</h3>
-                    <div class="large text-left card">
-                        <!--pyData-->
-                        <h3 class="line">Co-Founder, PyData Madison</h3>
-                        <h5>12/2019-present</h5>
-                        <ul class="justify">
-                            <li>Organized data science relevant events for the <a target="_blank"
-                                    rel="noopener noreferrer" href="https://www.meetup.com/PyData-Madison/"
-                                    class="noHighLight">PyData
-                                    community at Madison, WI</a>.
-                            </li>
-                        </ul>
-                    </div>
-                    </br>
-                    <div class="large text-left card">
-                        <!--the FB project-->
-                        <h3 class="line">Project Leader at the NTU CS+X Hackathon</h3>
-                        <p class="large"><b>Awarded the 1st place for best overall quality among 30+ competing
-                                projects</b></p>
-                        <h5>09/ 2016-01/2017</h5>
-                        <ul class="justify">
-                            <li>Identified the political “<b>political <u><a target="_blank" rel="noopener noreferrer"
-                                            href="https://en.wikipedia.org/wiki/Filter_bubble"
-                                            class="noHighLight">filter
-                                            bulbbles</a></u></b>” that existed in the Facebook user community
-                                using k-means clustering (R,
-                                Shiny) on web-crawled (JavaScript) large-scale post-liking data (19 million+
-                                observations & 342,796 users)</li>
-                            <li>Demonstrated that filter bubbles are formed by users' stances on specific social issues
-                                rather than on their support for major political parties
-                                <a href="#R_FB" type="button" class="btn btn-xl btn-small in-page-scroll"> See
-                                    Details</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <section class="section content-width about-section" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="section-kicker">01 / Research</p>
+          <h2 id="about-title">From human behavior to dependable agent behavior.</h2>
         </div>
+        <div class="about-layout">
+          <div class="about-copy">
+            <p>I develop methods that make language-model agents more capable and better grounded in what matters: completing multi-step tasks, reflecting diverse human beliefs, and interacting reliably in the real world.</p>
+            <p>My research draws on machine learning, cognitive science, and empirical social simulation. I am particularly interested in the evaluation and post-training loops that turn promising models into useful agents.</p>
+          </div>
+          <ol class="research-list">
+            <li>
+              <span class="list-index">01</span>
+              <div><h3>Train</h3><p>Reinforcement learning and preference optimization for interactive, tool-using agents.</p></div>
+            </li>
+            <li>
+              <span class="list-index">02</span>
+              <div><h3>Evaluate</h3><p>Scalable methods for measuring multi-turn reasoning, tool use, and task completion.</p></div>
+            </li>
+            <li>
+              <span class="list-index">03</span>
+              <div><h3>Align</h3><p>Human-centered multi-agent systems that represent diverse beliefs and social dynamics.</p></div>
+            </li>
+          </ol>
         </div>
-    </section>
+      </section>
 
-
-    <!--  Section for Research Projects Header: transparent img in the background-->
-    <section id="headerproject">
-        <div class="container">
-            <div class="col-lg-12 text-center">
-                <h1 class="section-heading">Research Projects</h1>
+      <section class="section section-tint" id="experience" aria-labelledby="experience-title">
+        <div class="content-width">
+          <div class="section-heading heading-inline">
+            <div>
+              <p class="section-kicker">02 / Experience</p>
+              <h2 id="experience-title">Research that connects ideas to deployed systems.</h2>
             </div>
+            <p class="heading-aside">I work across the full research cycle—from hypothesis and data to training, evaluation, and production-minded iteration.</p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-entry">
+              <div class="timeline-date">2024—present</div>
+              <div class="timeline-role">
+                <p class="role-label">PayPal AI Research</p>
+                <h3>Staff AI Research Scientist</h3>
+                <p>Developing foundation-model and post-training approaches for multi-turn, tool-calling agents and conversational recommendation. Current work includes reinforcement learning, scalable evaluation, RAG, and efficient inference for real-world AI systems.</p>
+                <div class="tag-row" aria-label="Skills used"><span>LLM post-training</span><span>RL</span><span>Agent evaluation</span><span>Distributed training</span></div>
+              </div>
+            </article>
+            <article class="timeline-entry">
+              <div class="timeline-date">2019—2024</div>
+              <div class="timeline-role">
+                <p class="role-label">University of Wisconsin–Madison</p>
+                <h3>Ph.D. Researcher, Human–AI</h3>
+                <p>Studied how LLM-based agents can model and interact with people. Built benchmarks and alignment methods for opinion dynamics, pluralistic preferences, and human-like multi-agent behavior.</p>
+                <div class="tag-row" aria-label="Skills used"><span>Multi-agent LLMs</span><span>Alignment</span><span>Social simulation</span></div>
+              </div>
+            </article>
+            <article class="timeline-entry timeline-entry-compact">
+              <div class="timeline-date">2019—2024</div>
+              <div class="timeline-role education-row">
+                <div><p class="role-label">Education</p><h3>University of Wisconsin–Madison</h3></div>
+                <p><strong>Ph.D., Cognitive Science</strong><br><strong>M.S., Computer Science</strong><br><span>Both GPA: 4.0 / 4.0</span></p>
+              </div>
+            </article>
+          </div>
         </div>
-    </section>
-    <section id="projects">
-        <div class="container">
-            <div class="col-lg-12">
-                <!--Research project: Facebook filter bubble-->
-                <div class="text-center card" id="R_FB">
-                    <h3 class="line"><a target="_blank" rel="noopener noreferrer"
-                            href="/projects/FB_filter_bubble.html">Identification and Examination Of "Facebook Filter
-                            Bubbles"</a></h3>
-                    <p class="large"><b><span class="larger">Research Question:</span> On Facebook, do people
-                            discuss politics
-                            mostly with
-                            those
-                            within the same filter
-                            bubble, i.e., who share the same political stances?</b></p>
-                    <div class='overlay'>
-                        <img src="/img/icon/link.png" height="150px" alt="link">
-                        </br> </br>
-                        <p class="larger">Click for More Details</p>
-                    </div>
-                    <img src="/img/projects/FB_cover.gif" height="400px" alt="FB filter bubbles">
-                </div>
-                </br>
-                <!-- Research project: LAMBDA, fraction cognition-->
-                <div class="text-center card" id="R_LAMBDA">
-                    <h3><a target="_blank" rel="noopener noreferrer" href="/projects/LAMBDA.html">Fraction Neural
-                            Representation In The Human Parietal Cortex</a></h3>
-                    <p class="large"><b><span class="larger">Research Question:</span> In the human brain, how are
-                            "fraction
-                            numbers" encoded?</b></p>
-                    <div class='overlay'>
-                        <img src="/img/icon/link.png" height="150px" alt="link">
-                        </br> </br>
-                        <p class="larger">Click for More Details</p>
-                    </div>
-                    <img src="/img/projects/LAMBDA_cover.png" height="300px" alt="LAMBDA project overview">
-                </div>
-                </br>
-                <!--Research project: ADM, personal values and risk-taking-->
-                <div class="text-center card" id="R_ADM">
-                    <h3><a target="_blank" rel="noopener noreferrer" href="/projects/ADM.html">Neural responses reveal
-                            associations between personal values and decision-making</a></h3>
-                    <p class="large"><b><span class="larger">Research Question:</span> How personal value (i.e., the
-                            values
-                            you appreciate in life)
-                            modulates our decision-making in our brain.</b></p>
-                    <div class='overlay'>
-                        <img src="/img/icon/link.png" height="150px" alt="link">
-                        </br> </br>
-                        <p class="larger">Click for More Details</p>
-                    </div>
-                    <img src="/img/projects/ADM_cover.png" height="300px" alt="LAMBDA project overview">
-                </div>
-            </div>
+      </section>
+
+      <section class="section content-width publications-section" id="publications" aria-labelledby="publications-title">
+        <div class="section-heading heading-inline">
+          <div>
+            <p class="section-kicker">03 / Selected publications</p>
+            <h2 id="publications-title">Research on agents, reasoning, and collective intelligence.</h2>
+          </div>
+          <a class="text-link" href="https://scholar.google.com/citations?user=XO6Nt0AAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">All publications on Google Scholar <span aria-hidden="true">↗</span></a>
         </div>
 
-    </section>
-    <!--  Section for Teaching Experience Header: transparent img in the background-->
-    <section id="headerother">
-        <div class="container">
-            <div class="col-lg-12 text-center">
-                <h1 class="section-heading">Other experiences</h1>
+        <div class="publication-list">
+          <article class="publication">
+            <div class="publication-meta"><span>ACL</span><time datetime="2026">2026</time></div>
+            <div class="publication-content">
+              <h3><a href="https://aclanthology.org/2026.acl-industry.87/" target="_blank" rel="noopener noreferrer">Toward Scalable Verifiable Reward: Proxy State-Based Evaluation for Multi-turn Tool-Calling LLM Agents <span aria-hidden="true">↗</span></a></h3>
+              <p>Chuang, Y.-S. et al. · ACL Industry Track</p>
             </div>
-        </div>
-    </section>
-
-    <section id="other">
-        <div class="container">
-            <div class="col-lg-12">
-                <!-- Teaching experience-->
-                <div class="text-center card" id="teaching_exp">
-                    <h3 class="line"><a target="_blank" rel="noopener noreferrer" href="/other/teaching.html">Teaching
-                            Experiences as a Math Teacher</a></h3>
-                    <div class='overlay'>
-                        <img src="/img/icon/link.png" height="150px" alt="link">
-                        </br> </br>
-                        <p class="larger">Click for More Details</p>
-                    </div>
-                    <img src="/img/education/math_instructor_brighten_v2_compressed.jpg" height="300px"
-                        alt="teaching experiences">
-                </div>
+          </article>
+          <article class="publication">
+            <div class="publication-meta"><span>NeurIPS</span><time datetime="2026">2026</time></div>
+            <div class="publication-content">
+              <h3><a href="https://openreview.net/pdf/bc8cc58672a1faa114280e480a5baaef65f38a33.pdf" target="_blank" rel="noopener noreferrer">DEBATE: A Large-Scale Benchmark for Evaluating Opinion Dynamics in Role-Playing LLM Agents <span aria-hidden="true">↗</span></a></h3>
+              <p>Chuang, Y.-S. et al. · Evaluations and Datasets Track</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="headercontact">
-        <div class="container">
-            <div class="col-lg-12 text-center">
-                <h1 class="section-heading">Contact</h1>
+          </article>
+          <article class="publication">
+            <div class="publication-meta"><span>EMNLP</span><time datetime="2025">2025</time></div>
+            <div class="publication-content">
+              <h3><a href="https://aclanthology.org/2025.emnlp-main.234.pdf" target="_blank" rel="noopener noreferrer">Probing LLM World Models: Enhancing Guesstimation with Wisdom of Crowds Decoding <span aria-hidden="true">↗</span></a></h3>
+              <p>Chuang, Y.-S. et al. · Main Conference</p>
             </div>
+          </article>
+          <article class="publication">
+            <div class="publication-meta"><span>ICLR</span><time datetime="2025">2025</time></div>
+            <div class="publication-content">
+              <h3><a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/b57b9aafccf6bf6a76d01079e316e14d-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">No Preference Left Behind: Group Distributional Preference Optimization <span aria-hidden="true">↗</span></a></h3>
+              <p>Yao, B., Cai, Z., Chuang, Y.-S. et al. · Conference paper</p>
+            </div>
+          </article>
+          <article class="publication">
+            <div class="publication-meta"><span>CogSci</span><time datetime="2024">2024</time></div>
+            <div class="publication-content">
+              <h3>The Delusional Hedge Algorithm as a Model of Human Learning from Diverse Opinions</h3>
+              <p>Chuang, Y.-S., Zhu, J., &amp; Rogers, T. T. · Computational Modeling Prize, Best Paper Award</p>
+            </div>
+          </article>
         </div>
-    </section>
-    <section id="contact">
-        <div class="col-lg-12 text-black large">
-            <ul style="list-style-type: none" class="text-center">
-                <li class="larger"> Email: yunshiuan.chuang@gmail.com
-                </li>
-                <li class="larger">LinkedIn:<a href="https://www.linkedin.com/in/yunshiuanchuang/">
-                        https://www.linkedin.com/in/yunshiuanchuang/</a></li>
-                <li><br><br><br></li>
-                <li style="font-size: 10px"><i>Acknowledge: I thank Julian Lin for permitting me to use his amazing
-                        photo as my website cover picture and Sin-Ying Lin for providing her website
-                        template.</i></li>
-            </ul>
+      </section>
 
+      <section class="work-callout">
+        <div class="content-width work-callout-grid">
+          <div>
+            <p class="section-kicker">Open source</p>
+            <h2>Simulating opinion dynamics with LLM agents.</h2>
+          </div>
+          <div>
+            <p>Code and materials for research on how networks of language-model agents form, exchange, and update opinions.</p>
+            <a class="button button-light" href="https://github.com/yunshiuan/llm-agent-opinion-dynamics" target="_blank" rel="noopener noreferrer">View the project on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- JavaScript -->
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <!--Plugin JQuery-->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <!--    <script src="js/jquery-3.2.1.js"></script>-->
-    <!-- Default: Version: 1.3 Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"
-        integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous">
-    </script>
-    <!-- Theme JavaScript -->
-    <script src="js/yunshiuan.js"></script>
-
-</body>
-
+    <footer class="site-footer" id="contact">
+      <div class="content-width footer-grid">
+        <div>
+          <p class="section-kicker">04 / Contact</p>
+          <h2>Let’s talk about reliable AI systems.</h2>
+          <a class="email-link" href="mailto:yunshiuan.chuang@gmail.com">yunshiuan.chuang@gmail.com <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="footer-links" aria-label="Profile links">
+          <a href="https://www.linkedin.com/in/yunshiuanchuang/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/yunshiuan" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://scholar.google.com/citations?user=XO6Nt0AAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="content-width footer-bottom"><span>© 2026 Yun-Shiuan Chuang</span><a href="#top">Back to top ↑</a></div>
+    </footer>
+  </body>
 </html>
